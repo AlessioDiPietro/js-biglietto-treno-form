@@ -18,7 +18,7 @@ generatore.addEventListener("click", function(){
 
     // nome passeggero
     var nomePass = document.getElementById("nomepass").value;
-    document.getElementById("ris-nome").innerHTML = nomePass;
+    document.getElementById("ris-nome").innerHTML = nomePass.charAt(0).toUpperCase() + nomePass.substring(1).toLowerCase();;
 
     // selezione fascia eta
     var eta = document.getElementById("eta").value;
@@ -27,6 +27,11 @@ generatore.addEventListener("click", function(){
 
     // km percorrenza
     var disKm = document.getElementById("numero-km").value;
+
+    // bonus1
+    if (disKm <= 0) {
+        alert ("inserisci un numero superiore a  0 PERFAVORE")
+    }
 
 
     // prezzo
