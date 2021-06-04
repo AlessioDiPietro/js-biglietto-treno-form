@@ -1,0 +1,36 @@
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+}
+
+body {
+    width: 100% ;
+    height: 100vh;
+    background-color: #b91450 ;
+    padding : 2% 7%;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+section {
+    background-color: white;
+}
+/* main */
+
+/* inserimento dati  */
+.center {
+    text-align: center;
+}
+.box {
+    width: calc (100% / 3);
+    display: inline-block;
+}

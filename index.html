@@ -11,9 +11,81 @@
 </head>
 <body>
     
+    <header>
+        <div class="container">
+            <h2>calcola il prezzo del tuo biglietto</h2>
+        </div>
+    </header>
+
+    <main>
+        <!-- sezione inserimento dati -->
+        <section id="inserimento">
+
+            <!-- Nome e cognome -->
+            <div class="zona-input center">
+
+                <div class="box">
+                    <label for="nome-cognome">Nome Cognome</label>
+                    <input type="text" value="nome-cognome"> 
+                </div>
+                
+    
+                <!-- km da percorrere -->
+                <div class="box">
+                    <label for="numero-km">Km da percorrere</label>
+                    <input type="text" value="numero-km">
+                </div>
+                
+                <!-- fascia età -->
+                <div class="box">
+                    <label for="fascia">Fascia et&agrave;</label>
+                    <select name="fascia" id="">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
 
 
+            </div>
 
+            <!-- bottoni -->
+            <div class="zona-btn center">
+                <button type="submit" >Genera</button>
+                <button type="submit" >Annulla</button>
+            </div>
+            
+        </section>
+
+
+        <!-- elaborazione dati -->
+
+        <h2>il tuo biglietto</h2>
+        
+        <section>
+            <h3>dettaglio passeggeri</h3>
+
+            <table>
+                <tr>
+                    <th>NOME PASSEGGERO</th>
+                    <th>Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo Biglietto</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+
+        </section>
+
+    </main>
 
 
 
