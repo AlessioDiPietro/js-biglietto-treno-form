@@ -41,10 +41,16 @@ generatore.addEventListener("click", function(){
     }else if ( eta == "Over65") {
         prezzo -= prezzo * 0.4
     }
-    
     document.getElementById("ris-costo").innerHTML = prezzo.toFixed(2) + " €";
     console.log("prezzo: ", prezzo.toFixed(2), "€")
-  
+
+    // numero carrozza
+    var numCarrozza = Math.floor(Math.random() * 10 + 1);
+    document.getElementById("ris-carrozza").innerHTML = "numero " + numCarrozza;
+
+    // numero treno
+    var numTreno = Math.floor(Math.random() *  (100000 - 90000) + 90000);
+    document.getElementById("ris-codice").innerHTML = "codice " + numTreno;
 });
 
 var reset = document.getElementById("reset");
