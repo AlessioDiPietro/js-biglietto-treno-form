@@ -8,8 +8,13 @@
 h2 {
     text-transform: uppercase;
     color: white;
+    line-height: 6rem;
 }
-
+h3 {
+    text-align: start;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
 body {
     width: 100% ;
     height: 100vh;
@@ -23,6 +28,17 @@ label {
 }
 section {
     background-color: white;
+    padding: 4rem;
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+table td {
+    padding: 2rem 0;
 }
 /* main */
 
@@ -33,6 +49,18 @@ section {
 .box {
     width: calc (100% / 3);
     display: inline-block;
+}
+.zona-btn {
+    margin-top: 2rem;
+    
+}
+.zona-btn button {
+    background-color: pink;
+    border: 1 solid ;
+    border-radius: 5px;
+    color: #b91450;
+    margin: 1rem;
+    pad: 1rem;
 }
 
 
