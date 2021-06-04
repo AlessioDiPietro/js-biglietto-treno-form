@@ -34,3 +34,11 @@ section {
     width: calc (100% / 3);
     display: inline-block;
 }
+
+
+
+
+/* elaborazione dati */
+.reset-det {
+    display: none;
+}

@@ -14,21 +14,19 @@ var genetatore = document.getElementById;("generatore");
 
 generatore.addEventListener("click", function(){
 
+    document.getElementById("dettagli").className = "restart-det";
 
     // nome passeggero
     var nomePass = document.getElementById("nomepass").value;
-    console.log(nomePass);
     document.getElementById("ris-nome").innerHTML = nomePass;
 
     // selezione fascia eta
     var eta = document.getElementById("eta").value;
-    console.log(eta);
     document.getElementById("ris-offerta").innerHTML = "Sconto" + "<br>" + eta;
 
 
     // km percorrenza
     var disKm = document.getElementById("numero-km").value;
-    console.log(disKm);
 
 
     // prezzo
@@ -42,7 +40,6 @@ generatore.addEventListener("click", function(){
         prezzo -= prezzo * 0.4
     }
     document.getElementById("ris-costo").innerHTML = prezzo.toFixed(2) + " €";
-    console.log("prezzo: ", prezzo.toFixed(2), "€")
 
     // numero carrozza
     var numCarrozza = Math.floor(Math.random() * 10 + 1);
@@ -53,8 +50,20 @@ generatore.addEventListener("click", function(){
     document.getElementById("ris-codice").innerHTML = "codice " + numTreno;
 });
 
+
+
+
 var reset = document.getElementById("reset");
 
 reset.addEventListener("click", function(){
-    var nomePass = "";
+
+    // dettagli
+    document.getElementById("dettagli").className = "reset-det";
+
+
+    document.getElementById("nomepass").value = "";
+    
+    document.getElementById("numero-km").value = "";
+
+    document.getElementById("eta").value = "Minorenne";
 })
