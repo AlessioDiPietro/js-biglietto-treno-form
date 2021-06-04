@@ -26,23 +26,23 @@
 
                 <div class="box">
                     <label for="nome-cognome">Nome Cognome</label>
-                    <input type="text" value="nome-cognome"> 
+                    <input type="text" value="" placeholder="il tuo nome" id="nomepass"> 
                 </div>
                 
     
                 <!-- km da percorrere -->
                 <div class="box">
                     <label for="numero-km">Km da percorrere</label>
-                    <input type="text" value="numero-km">
+                    <input type="number" value="" placeholder="Quanti chilometri?" id="numero-km">
                 </div>
                 
                 <!-- fascia età -->
                 <div class="box">
                     <label for="fascia">Fascia et&agrave;</label>
-                    <select name="fascia" id="">
-                        <option value="minorenne">Minorenne</option>
-                        <option value="maggiorenne">Maggiorenne</option>
-                        <option value="over65">Over 65</option>
+                    <select name="fascia" id="eta">
+                        <option value="Minorenne">Minorenne</option>
+                        <option value="Maggiorenne">Maggiorenne</option>
+                        <option value="Over65">Over65</option>
                     </select>
                 </div>
 
@@ -51,8 +51,8 @@
 
             <!-- bottoni -->
             <div class="zona-btn center">
-                <button type="submit" >Genera</button>
-                <button type="submit" >Annulla</button>
+                <button type="submit" id="generatore">Genera</button>
+                <button type="submit" id="reset">Annulla</button>
             </div>
             
         </section>
@@ -61,7 +61,7 @@
         <!-- elaborazione dati -->
 
         <h2>il tuo biglietto</h2>
-        
+
         <section>
             <h3>dettaglio passeggeri</h3>
 
@@ -74,11 +74,11 @@
                     <th>Costo Biglietto</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="ris-nome"></td>
+                    <td id="ris-offerta"></td>
+                    <td id="ris-carrozza"></td>
+                    <td id="ris-codice"></td>
+                    <td id="ris-costo"></td>
                 </tr>
             </table>
 

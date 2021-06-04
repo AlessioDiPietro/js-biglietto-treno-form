@@ -10,3 +10,45 @@
 // Bonus: aggiungete qualche controllo sui dati di input!
 
 
+var genetatore = document.getElementById;("generatore");
+
+generatore.addEventListener("click", function(){
+
+
+    // nome passeggero
+    var nomePass = document.getElementById("nomepass").value;
+    console.log(nomePass);
+    document.getElementById("ris-nome").innerHTML = nomePass;
+
+    // selezione fascia eta
+    var eta = document.getElementById("eta").value;
+    console.log(eta);
+    document.getElementById("ris-offerta").innerHTML = "Sconto" + "<br>" + eta;
+
+
+    // km percorrenza
+    var disKm = document.getElementById("numero-km").value;
+    console.log(disKm);
+
+
+    // prezzo
+    var prezzo = disKm * 0.21;
+    
+    // sconto
+    if (eta == "Minorenne") {
+        prezzo -= prezzo * 0.2;
+        
+    }else if ( eta == "Over65") {
+        prezzo -= prezzo * 0.4
+    }
+    
+    document.getElementById("ris-costo").innerHTML = prezzo.toFixed(2) + " €";
+    console.log("prezzo: ", prezzo.toFixed(2), "€")
+  
+});
+
+var reset = document.getElementById("reset");
+
+reset.addEventListener("click", function(){
+    var nomePass = "";
+})
